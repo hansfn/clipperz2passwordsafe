@@ -5,10 +5,13 @@ A PHP script that converts a JSON file exported from Clipperz
 to a XML that can be imported by Password Safe. Written by
 Hans F. Nordhaug - <hansfn@gmail.com>.
 
-Usage: php clipperz2passwordsafe.php [utf8encode] json-file xml-file
+Usage: php clipperz2passwordsafe.php [option] json-file xml-file
+
+Currently the only option is '-utf8encode' which can be used if
+you, by accident, save the exported JSON file as ISO-8859-1/CP-1252.
 
 The script tries to handle the fact that a Clipperz card can contain
-many username and passwords pairs. It also tries to warn when
+many username and password pairs. It also tries to warn when
 data is skipped because a Password Safe entry is less flexible
 than a Clipperz card.
 

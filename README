@@ -1,0 +1,18 @@
+clipperz2passwordsafe
+=====================
+
+A PHP script that converts a JSON file exported from Clipperz 
+to a XML that can be imported by Password Safe. Written by
+Hans F. Nordhaug - <hansfn@gmail.com>.
+
+Usage: php clipperz2passwordsafe.php [utf8encode] json-file xml-file
+
+The script tries to handle the fact that a Clipperz card can contain
+many username and passwords pairs. It also tries to warn when
+data is skipped because a Password Safe entry is less flexible
+than a Clipperz card.
+
+The script is NOT intended to be run on a webserver, because uploading
+the JSON file with all your unencrypted passwords is very high risk.
+
+The script is placed in the public domain.
